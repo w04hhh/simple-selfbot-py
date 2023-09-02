@@ -19,7 +19,6 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    ctypes.windll.kernel32.SetConsoleTitleW(f"Michi SelfBot | {version} | Logged Into: {client.user} | Prefix: {prefix}")
     print(f"Michi-SelfBot {version}\nLogged Into: {client.user} - ID: {client.user.id}", 1)
     print(f"--------------------------------------------------")
 
